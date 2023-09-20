@@ -85,7 +85,7 @@ const addDogToPage = (dog) =>{
             dog.isGoodDog = !dog.isGoodDog
             dogSpan.setAttribute("goodboy",dog.isGoodDog)
             goodBoyButton.textContent = dog.isGoodDog ? "Bad dog" : "Good dog"
-            if(dog.isGoodDog === false){
+            if(dog.isGoodDog === false && searchingForGoodDog===false){
                 dogSpan.remove()
                 goodBoyButton.remove()
                 dogImg.src=""
